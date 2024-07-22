@@ -4,11 +4,11 @@ import pandas as pd
 import sklearn
 from sklearn.linear_model import LinearRegression
 import pickle
-st.image(r"C:\Users\shrav\Documents\Streamlit\streamlit\573326-innomatics_research_labs_logo.png")
+st.image(r"573326-innomatics_research_labs_logo.png")
 
 st.title("Arrival time estimation Project")
 st.header("By Shravan Kumar Polu")
-model = pickle.load(open(r"C:\Users\shrav\Documents\Streamlit\streamlit\estimator.pkl","rb"))
+model = pickle.load(open(r"estimator.pkl","rb"))
 
 start_lat = st.number_input("Enter the start latitude:",)
 start_lang = st.number_input("Enter the start longitude:")
